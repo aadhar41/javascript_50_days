@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: steelblue;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.container .result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.container .result span {
+  font-weight: bold;
+}
+
+.container .error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.container .error span {
+  font-weight: bold;
+}
+
+.container .error.hidden {
+  display: none;
+}
+
+.container .error.visible {
+  display: block;
+}
+
+.container .error.hidden {
+  display: none;
+}
+
+.container .error.visible {
+  display: block;
+}
+
+/* The CSS code you provided is styling form controls and buttons in your web page. Here's a breakdown
+of what each part of the code is doing: */
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control > input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  display: block;
+  padding: 10px 0;
+  font-size: 1rem;
+  width: 100%;
+  color: #333;
+  transition: border-color 0.3s;
+  font-size: 18px;
+}
+
+.form-control > input:focus,
+.form-control > input:valid {
+  outline: none;
+  border-color: steelblue;
+  border-bottom: 2px solid steelblue;
+}
+
+.form-control > input:focus + label,
+.form-control > input:valid + label {
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: steelblue;
+}
+
+.form-control > label > span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  top: 10px;
+  left: 0;
+  color: #999;
+  /* transition: all 0.3s ease; */
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control > input:focus + label span,
+.form-control > input:valid + label span {
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  color: steelblue;
+}
+
+.form-control > label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 18px;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: steelblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  transition: background-color 0.3s;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn:active {
+  background-color: #004494;
+  transform: scale(0.98);
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+}
